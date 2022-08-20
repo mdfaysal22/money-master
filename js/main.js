@@ -61,5 +61,9 @@ document.getElementById('reset').addEventListener('click', function(){
     reset('rent');
     reset('clothes');
     reset('save');
+    removeInnerValue('total-Cost');
+    removeInnerValue('balance');
+    removeInnerValue('savings-amount');
+    removeInnerValue('remaining-balance');
 })
 
