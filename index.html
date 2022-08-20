@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master Calulator</title>
+    <script src="https://kit.fontawesome.com/7087213ae2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl	font-bold text-center">Money Master <i class="fa-solid fa-dollar-sign text-green-800"></i> </h1>
+    </header>
+    <section class="w-11/12 mx-auto my-4 flex">
+        <div class="w-6/12">
+            <img class="w-full overflow-hidden" src="./img/main.png" alt="">
+        </div>
+        <div class="w-5/12 mx-auto bg-slate-300	text-center">
+            <div>
+                <h1 class="my-4 text-xl">Income</h1>
+
+                <label for="income">Income : </label>
+                <input class="my-4 p-1" type="text" name="" id="income">
+
+                <h2 class="text-xl">Expenses</h2>
+                <label for="food">Food : </label>
+                <input class="my-4 p-1" type="text" name="" id="food">
+
+                <br>
+                <label for="rent">Rent : </label>
+                <input class="my-4 p-1" type="text" name="" id="rent">
+                <br>
+                <label for="clothes">Clothes : </label>
+                <input class="my-4 p-1" type="text" name="" id="clothes">
+
+                <br>
+                <button id="calculate" class="py-1 bg-sky-900 text-slate-300 px-4">Calculate</button>
+
+                <h3 class="my-4 text-xl">Total Expenses : $<span id="total-Cost">4500</span></h3>
+                <h3 class="my-4 text-xl">Balance : $<span id="balance">2000</span></h3>
+
+                <div class="my-4">
+                    <label for="save">Save : </label>
+                    <input class="p-1" type="text" name="" id="save">
+
+                    <span>%</span>
+
+                    <button id="savings" class="py-1 bg-sky-900 text-slate-300 px-4">Save</button>
+                </div>
+
+                <h3 class="my-4 text-xl">Saving Amount : $<span id="savings-amount">000</span></h3>
+                <h3 class="my-4 text-xl">Remaining Balance: $<span id="remaining-balance">0000</span></h3>
+
+
+                <button id="reset" class="py-1 bg-sky-900 text-slate-300 px-4">Reset Data</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/function.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
